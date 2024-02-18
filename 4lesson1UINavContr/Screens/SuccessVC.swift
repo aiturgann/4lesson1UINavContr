@@ -15,6 +15,7 @@ class SuccessVC: UIViewController {
         successImage.translatesAutoresizingMaskIntoConstraints = false
         return successImage
     }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,6 +31,9 @@ class SuccessVC: UIViewController {
              successImage.centerYAnchor.constraint(equalTo: view.centerYAnchor),
              successImage.heightAnchor.constraint(equalToConstant: 235),
              successImage.widthAnchor.constraint(equalToConstant: 183.5)
-    ])
+            ])
+        
     }
+    
+    
 }

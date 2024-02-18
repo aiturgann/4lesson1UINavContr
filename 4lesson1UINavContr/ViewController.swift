@@ -150,11 +150,6 @@ class ViewController: UIViewController {
         textFieldValueValidate(textField: employeeTF)
         textFieldValueValidate(textField: passwordTF)
         
-        if employeeTF.text?.count ?? 0 >= 5 && passwordTF.text?.count ?? 0 >= 5 {
-            signInBtnTppd()
-        } else {
-            errorLabel.textColor = .systemGray
-        }
     }
     
     private func textFieldValueValidate(textField: UITextField) {
@@ -300,11 +295,9 @@ class ViewController: UIViewController {
     }
     
     @objc private func signInBtnTppd() {
-        if employeeTF.layer.borderColor == UIColor.systemGray6.cgColor
-            && passwordTF.layer.borderColor == UIColor.systemGray6.cgColor && checkButton.tintColor == .systemBlue {
             let vc = SuccessVC()
             navigationController?.pushViewController(vc, animated: true)
-        }
+        
     }
     
     @objc func checkBtnTppd() {
